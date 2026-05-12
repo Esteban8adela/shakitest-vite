@@ -4,6 +4,7 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
+    setupFiles: ["./vitest.setup.ts"],
     tags: [
       { name: "frontend", description: "Tests written for frontend." },
       { name: "backend", description: "Tests written for backend." },

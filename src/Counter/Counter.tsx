@@ -1,10 +1,12 @@
 import { useState } from "react";
 type CounterProps = { initialCount?: number };
 import { Buttons } from "./Buttons";
+import { getNumber } from "../mocks/mocks";
 
 const dataTestId: string = "Counter";
 const Counter = ({ initialCount = 0 }: CounterProps) => {
     const [counter, setCounter] = useState<number>(initialCount);
+    const temp = getNumber();
     return (
         <div>
             <header>

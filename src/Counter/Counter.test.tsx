@@ -7,7 +7,7 @@ import { setUpUserEvent } from "./setUpUserEvent";
 
 
 describe("Counter ", () => {
-    test("It should render the component", () => {
+    test("It should render the component", () => { 
         render(<Counter />);
         const currentCount = screen.getByTestId('Counter-Value');
         screen.debug(currentCount);
